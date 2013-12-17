@@ -3,9 +3,6 @@ package com.whypro.homework.beans;
 import java.io.Serializable;
 
 public class Teacher implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5210136712557380951L;
 	private int id;
 	private String number;	// 教师号
@@ -22,8 +19,11 @@ public class Teacher implements Serializable {
 	    
 	}
 	
-	public Teacher(String name, String gender, String telephone, String mobile,
+	public Teacher(String number, String password, String name, 
+	        String gender, String telephone, String mobile,
 	        String email, int schoolId, String description) {
+	    this.setNumber(number);
+	    this.setPassword(password);
 	    this.setName(name);
 	    this.setGender(gender);
 	    this.setTelephone(telephone);
@@ -103,5 +103,17 @@ public class Teacher implements Serializable {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public String toString() {
+	    return "Number: " + this.getNumber() + 
+	            ", Password: " + this.getPassword() +
+	            ", Name: " + this.getName() + 
+	            ", Gender: " + this.getGender() + 
+	            ", Telephone: " + this.getTelephone() + 
+	            ", Mobile: " + this.getMobile() + 
+	            ", Email: " + this.getEmail() + 
+	            ", School-Id: " + "" +
+	            ", Description: " + this.getDescription();
 	}
 }

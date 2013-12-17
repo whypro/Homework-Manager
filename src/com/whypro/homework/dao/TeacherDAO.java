@@ -24,11 +24,11 @@ public interface TeacherDAO {
 			"school_id=:1.schoolId")
 	public void update(Teacher teacher);
 	
-	@SQL("select id, number, password, name, gender, telephone, mobile, email, school_id " +
+	@SQL("select id, number, name, gender, telephone, mobile, email " +
 			"from teacher where id=:1")
 	public Teacher get(int teacherId);
 	
-	@SQL("select id, number, name, gender, telephone, mobile, email, school_id " +
+	@SQL("select id, number, name, gender, telephone, mobile, email " +
 			"from teacher")
 	public List<Teacher> find();
 }

@@ -1,4 +1,4 @@
-package com.whypro.fuckjava.entity;
+package com.whypro.hm.entity;
 
 import java.io.Serializable;
 

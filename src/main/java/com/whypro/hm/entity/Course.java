@@ -1,10 +1,19 @@
-package com.whypro.fuckjava.entity;
+package com.whypro.hm.entity;
 
-public class School {
+
+public class Course {
     private int id;
     private String number;
     private String name;
     private String description;
+
+    public Course() {}
+    
+    public Course(String number, String name, String description) {
+        setNumber(number);
+        setName(name);
+        setDescription(description);
+    }
 
     public int getId() {
         return id;
@@ -36,5 +45,11 @@ public class School {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    
+    public String toString() {
+        return "Number: " + this.getNumber() + 
+                ", Name: " + this.getName() + 
+                ", Description: " + this.getDescription();
     }
 }

@@ -9,8 +9,8 @@
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="查看所有教师">
-<title>查看所有教师</title>
+<meta http-equiv="description" content="查看所有课程">
+<title>查看所有课程</title>
 
 <link href="<%=request.getContextPath()%>/css/bootstrap.min.css"
   rel="stylesheet" />
@@ -27,47 +27,33 @@
     <div class="row">
       <div class="col-lg-2">
         <ul class="nav nav-pills nav-stacked">
-          <c:set var="teacherPage" scope="request" value="true" />
+          <c:set var="coursePage" scope="request" value="true" />
           <%@ include file="../side-nav.jsp"%>
         </ul>
       </div>
       <div class="col-lg-10">
         <table class="table table-hover table-responsive">
           <thead>
-
             <tr>
-
               <th>ID</th>
-              <th>教师号</th>
-              <th>姓名</th>
-              <th>性别</th>
-              <th>办公电话</th>
-              <th>手机</th>
-              <th>电子邮箱</th>
-              <th>学院</th>
-              <th>备注</th>
+              <th>课程号</th>
+              <th>课程名称</th>
+              <th>简介</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-
-
-            <c:forEach var='teacher' items="${teachers}">
-              <tr id="${teacher.id} }">
-                <td>${teacher.id}</td>
-                <td>${teacher.number}</td>
+            <c:forEach var='course' items="${courses}">
+              <tr id="${course.id} }">
+                <td>${course.id}</td>
+                <td>${course.number}</td>
                 <td><a
-                  href="<%=request.getContextPath()%>/teacher/${teacher.id}">
-                    ${teacher.name} </a></td>
-                <td>${teacher.gender}</td>
-                <td>${teacher.telephone}</td>
-                <td>${teacher.mobile}</td>
-                <td>${teacher.email}</td>
-                <td></td>
-                <td>${teacher.description}</td>
+                  href="<%=request.getContextPath()%>/course/${course.id}">
+                    ${course.name} </a></td>
+                <td>${course.description}</td>
                 <td>
                   <form
-                    action="<%=request.getContextPath()%>/teacher/${teacher.id}"
+                    action="<%=request.getContextPath()%>/course/${course.id}"
                     method="post">
                     <input type="hidden" name="_method" value="DELETE" />
                     <input class="btn btn-primary btn-xs" type="submit"
@@ -80,8 +66,8 @@
           </tbody>
 
         </table>
-        <a href="<%=request.getContextPath()%>/teacher/add"
-          class="btn btn-primary">添加教师</a>
+        <a href="<%=request.getContextPath()%>/course/add"
+          class="btn btn-primary">添加课程</a>
       </div>
     </div>
   </div>

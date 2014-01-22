@@ -31,9 +31,8 @@
       </div>
       <div class="col-lg-10">
         <form class="form-horizontal"
-          action="<%=request.getContextPath()%>/teacher/add"
+          action="<%=request.getContextPath()%>/teacher/${teacher.id}"
           method="POST">
-
           <div class="form-group">
             <label for="number" class="col-lg-2 control-label">教师号</label>
             <div class="col-lg-6">
@@ -81,8 +80,10 @@
             <label for="gender" class="col-lg-2 control-label">性别</label>
             <div class="col-lg-6">
               <select name="gender" class="form-control">
-                <option value="男">男</option>
-                <option value="女">女</option>
+                <option value="男"
+                  <c:if test="${teacher.gender == '男'}"> selected</c:if>>男</option>
+                <option value="女"
+                  <c:if test="${teacher.gender == '女'}"> selected</c:if>>女</option>
               </select>
             </div>
             <div class="col-lg-4">
@@ -129,7 +130,8 @@
             <div class="col-lg-6">
               <select name=school-id class="form-control">
                 <c:forEach var='school' items="${schools}">
-                  <option value="${school.id}">${school.name}</option>
+                  <option value="${school.id}"
+                    <c:if test="${teacher.schoolId == school.id}"> selected</c:if>>${school.name}</option>
                 </c:forEach>
               </select>
             </div>
@@ -154,7 +156,7 @@
               <a href="<%=request.getContextPath()%>/teacher"
                 class="btn btn-primary pull-right">返回</a>
             </div>
-
+            <input name="_method" type="hidden" value="PUT" />
           </div>
         </form>
 

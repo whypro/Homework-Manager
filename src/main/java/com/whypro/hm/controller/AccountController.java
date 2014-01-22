@@ -1,4 +1,4 @@
-package com.whypro.fuckjava.controller;
+package com.whypro.hm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

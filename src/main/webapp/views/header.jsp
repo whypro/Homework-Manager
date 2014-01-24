@@ -9,9 +9,9 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">在线作业批改平台</a>
+    <a class="navbar-brand" href="<%=request.getContextPath()%>">在线作业批改平台</a>
   </div>
-
+  
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <%-- 
@@ -32,7 +32,7 @@
     </ul>
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="请输入关键词……">
       </div>
       <button type="submit" class="btn btn-default">搜索</button>
     </form>

@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -38,19 +36,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="<%=request.getContextPath()%>/img/mass_01_06.jpg">
+            <img src="<%=request.getContextPath()%>/img/mass_01_06.jpg"  />
+            <div class="carousel-caption">
+            <h1><a href="<%=request.getContextPath()%>/teacher">Start</a></h1>
+            </div>
+          </div>
+          <div class="item">
+            <img src="<%=request.getContextPath()%>/img/mass_01_07.jpg" />
             <div class="carousel-caption"></div>
           </div>
           <div class="item">
-            <img src="<%=request.getContextPath()%>/img/mass_01_07.jpg">
+            <img src="<%=request.getContextPath()%>/img/mass_01_17.jpg" />
             <div class="carousel-caption"></div>
           </div>
           <div class="item">
-            <img src="<%=request.getContextPath()%>/img/mass_01_17.jpg">
-            <div class="carousel-caption"></div>
-          </div>
-          <div class="item">
-            <img src="<%=request.getContextPath()%>/img/mass_01_26.jpg">
+            <img src="<%=request.getContextPath()%>/img/mass_01_26.jpg" />
             <div class="carousel-caption"></div>
           </div>
         </div>
@@ -66,9 +66,6 @@
       </div>
       
     </div>
-    <div class="row text-center">
-     <a href="<%=request.getContextPath()%>/teacher" class="btn btn-primary">开始体验</a>
-     </div>
         
   </div>
 </body>

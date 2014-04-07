@@ -40,7 +40,7 @@
               <input class="form-control" name="number"
                 value="${teacher.number}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入教师号</p>
             </div>
           </div>
@@ -52,7 +52,7 @@
               <input class="form-control" name="name"
                 value="${teacher.name}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入姓名</p>
             </div>
           </div>
@@ -63,7 +63,7 @@
               <input class="form-control" name="password"
                 type="password" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入密码</p>
             </div>
           </div>
@@ -73,7 +73,7 @@
               <input class="form-control" name="password-again"
                 type="password" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请再次输入密码</p>
             </div>
           </div>
@@ -85,7 +85,7 @@
                 <option value="女">女</option>
               </select>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请选择性别</p>
             </div>
           </div>
@@ -96,7 +96,7 @@
               <input class="form-control" name="telephone"
                 value="${teacher.telephone}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入固定电话号码</p>
             </div>
           </div>
@@ -107,7 +107,7 @@
               <input class="form-control" name="mobile"
                 value="${teacher.mobile}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入手机号码</p>
             </div>
           </div>
@@ -119,7 +119,7 @@
               <input class="form-control" name="email" type="email"
                 value="${teacher.email}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入电子邮箱</p>
             </div>
           </div>
@@ -133,7 +133,7 @@
                 </c:forEach>
               </select>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请选择学院</p>
             </div>
           </div>
@@ -143,7 +143,7 @@
             <div class="col-lg-6">
               <textarea name="description" class="form-control" rows="3">${teacher.description}</textarea>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入简介</p>
             </div>
           </div>

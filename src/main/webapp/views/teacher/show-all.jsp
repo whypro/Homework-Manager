@@ -34,7 +34,6 @@
       <div class="col-lg-10">
         <table class="table table-hover table-responsive">
           <thead>
-
             <tr>
 
               <th>ID</th>

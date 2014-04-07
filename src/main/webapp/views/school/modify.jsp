@@ -40,7 +40,7 @@
               <input class="form-control" name="number"
                 value="${school.number}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入学院号</p>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <input class="form-control" name="name"
                 value="${school.name}" />
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入学院名称</p>
             </div>
           </div>
@@ -61,7 +61,7 @@
             <div class="col-lg-6">
               <textarea name="description" class="form-control" rows="3">${school.description}</textarea>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 hidden">
               <p class="text-danger">请输入简介</p>
             </div>
           </div>
